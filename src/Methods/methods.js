@@ -9,7 +9,7 @@ const methods = {
         });
     },
     srollEffect: (elements)=> {
-        window.onscroll = ()=> {
+        const scroll = ()=> {
             const {scrollY} = window;
             for(let element of elements) {
                 const {offsetTop} = element;
@@ -17,7 +17,9 @@ const methods = {
                     element.classList.add('show')
                 }
             }
-        }
+        };
+        scroll();
+        window.onscroll = scroll;
     }
 };
 
