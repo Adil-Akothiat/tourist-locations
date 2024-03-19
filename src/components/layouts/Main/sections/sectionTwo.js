@@ -9,8 +9,8 @@ const SectionTwo = ()=> {
             </div>
             <div className='about_us hidden'>
                 <h2>What About Us is about</h2>
-                <p className='p_1'>Around Us is an upcoming search engine specialized in searching activities around you.</p>
-                <p className='p_2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem</p>
+                <p className='p_1'>Local Tourism Guide Mobile Application</p>
+                <p className='p_2'>The Local Tourism Guide mobile application is designed to serve as a comprehensive guide for tourists and visitors, showcasing the attractions, landmarks, restaurants, events, and cultural experiences available in the local area. The app aims to enhance the tourism experience, promote local businesses, and encourage exploration of the community's unique offerings.</p>
                 <button><a href='#/find-perfect-places-for-me'>Find perfect places for me</a></button>
             </div>
         </section>  

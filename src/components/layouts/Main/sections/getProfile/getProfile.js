@@ -5,8 +5,8 @@ const GetProfile = ()=> {
         <div className='get_profile hidden'>
             <div>
                 <h3>Get your profile</h3>
-                <p>Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil</p>
-                <button><a href="#/search">Search</a></button>
+                <p>Create Your Own Profile and Share the cities that you're visit!</p>
+                <button><a href="#/create">Create</a></button>
             </div>
         </div>
     );

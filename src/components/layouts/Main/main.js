@@ -9,11 +9,23 @@ import LastSection from './sections/lastSection';
 import SectionOne from './sections/sectionOne';
 import popularDest from '../../../data/popularDest.json';
 import placesMightLike from '../../../data/placesMightLike.json';
+import LastSection2 from './sections/lastSection2';
 
 const Main = ()=> {
   const [data, setData] = useState(bestPlaces.filter((element,i)=> i<=bestPlaces.length-11?element:null));
   const [showAll, setShowAll] = useState(true);
-  const countries = ['Canada', 'Germany', 'Netherlands', 'Museum', 'Zoo', 'Monument', 'Fountain'];
+  const countries = [
+    "Marrakech",
+    "Casablanca",
+    "Fez",
+    "Rabat",
+    "Tangier",
+    "Agadir",
+    "Essaouira",
+    "Chefchaouen",
+    "Meknes",
+    "Ouarzazate"
+  ]
   useEffect(()=> {
     // set Grid number of columns
     document.querySelector('.gallery').style.gridTemplateColumns = `repeat(${popularDest.length}, 1fr)`;
@@ -66,6 +78,8 @@ const Main = ()=> {
       <SectionFour data={data}/>
       <SectionFive newData={newData}/>
       <LastSection />
+      <div style={{margin:"2em 0"}}></div>
+      <LastSection2 />
     </main>
   );
 }

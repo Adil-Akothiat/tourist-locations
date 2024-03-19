@@ -1,122 +1,112 @@
 [
-    {
-        "title":"Nature", 
-        "image":"https://picsum.photos/200/310",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Ipsum", 
-        "image":"https://picsum.photos/200/311",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Picsum", 
-        "image": "https://picsum.photos/200/312",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Dolor", 
-        "image":"https://picsum.photos/200/313",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Amet", 
-        "image":"https://picsum.photos/200/314",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Endangered", 
-        "image":"https://picsum.photos/200/315",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Extinct", 
-        "image":"https://picsum.photos/200/316",
-        "views":"1.3K",
-        "location":"Your Location"
-    }, 
-    {
-        "title":"Constructor",
-        "image":"https://picsum.photos/200/317",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Tenetur",
-        "image":"https://picsum.photos/200/318",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Nihil",
-        "image":"https://picsum.photos/200/319",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Rerum",
-        "image":"https://picsum.photos/200/320",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Culpa",
-        "image":"https://picsum.photos/200/321",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"nesciunt",
-        "image":"https://picsum.photos/200/322",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Fuga",
-        "image":"https://picsum.photos/200/323",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Laborum",
-        "image":"https://picsum.photos/200/324",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Cumque",
-        "image":"https://picsum.photos/200/325",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Aqua",
-        "image":"https://picsum.photos/200/190",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Expidita",
-        "image":"https://picsum.photos/200/192",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Ipsa",
-        "image":"https://picsum.photos/200/195",
-        "views":"1.3K",
-        "location":"Your Location"
-    },
-    {
-        "title":"Officiis",
-        "image":"https://picsum.photos/200/196",
-        "views":"1.3K",
-        "location":"Your Location"
-    }
+{
+    "title": "Chefchaouen (The Blue Pearl)",
+    "image": "https://i.pinimg.com/originals/97/d8/df/97d8df2cd413cab206291a26c2db6b2a.jpg",  "views": "1.3K",
+    "location": "Tangier-Tetouan-Al Hoceima, Morocco"
+  },
+  {
+    "title": "Jemaa el-Fnaa (Marrakech Square)",
+    "image": "https://i.pinimg.com/564x/9d/67/47/9d674749aa0bf92faa47d844fdef8904.jpg",  "views": "1.3K",
+    "location": "Marrakech-Safi, Morocco"
+  },
+  {
+    "title": "Hassan II Mosque (Casablanca)",
+    "image": "https://i.pinimg.com/564x/7a/b1/0a/7ab10ad8d8b96dae29e8ac5a846fb05b.jpg",  "views": "1.3K",
+    "location": "Casablanca-Settat, Morocco"
+  },
+  {
+    "title": "Todra Gorge (Tinghir)",
+    "image": "https://i.pinimg.com/564x/a8/aa/99/a8aa9915a8399c79926c8e35749fad48.jpg",  "views": "1.3K",
+    "location": "Draa-Tafilalet, Morocco"
+  },
+  {
+    "title": "Erg Chebbi Dunes (Merzouga)",
+    "image": "https://i.pinimg.com/564x/0b/8f/2d/0b8f2d452324c2d6f0989753bed615bb.jpg",  "views": "1.3K",
+    "location": "Draa-Tafilalet, Morocco"
+  },
+  {
+    "title": "Volubilis (Roman Ruins)",
+    "image": "https://i.pinimg.com/564x/0c/74/34/0c74348ccdc11c352328ea7fe82aaa4b.jpg",  "views": "1.3K",
+    "location": "Meknes-Tafilalet, Morocco"
+  },
+  {
+    "title": "Majorelle Garden (Marrakech)",
+    "image": "https://i.pinimg.com/564x/ba/35/cd/ba35cd90371b8f6e8b88a61d9287f38e.jpg",  "views": "1.3K",
+    "location": "Marrakech-Safi, Morocco"
+  },
+  {
+    "title": "Essaouira (Mogador)",
+    "image": "https://i.pinimg.com/564x/8c/18/8c/8c188cb4fe3c57a4c9b086477008afe3.jpg",  "views": "1.3K",
+    "location": "Marrakech-Safi, Morocco"
+  },
+  {
+    "title": "Ouzoud Waterfalls",
+    "image": "https://i.pinimg.com/564x/49/0f/f4/490ff458f9ec2a418305c8ea0d66f008.jpg",  "views": "1.3K",
+    "location": "Béni Mellal-Khénifra, Morocco"
+  },
+  {
+    "title": "Tanger Medina (Old Town)",
+    "image": "https://i.pinimg.com/564x/2c/72/03/2c7203aacd0254a29c0f4f2efea01eb7.jpg",  "views": "1.3K",
+    "location": "Tangier-Tetouan-Al Hoceima, Morocco"
+  },
+  {
+    "title": "Dades Gorges",
+    "image": "https://i.pinimg.com/564x/7d/8a/71/7d8a716692c90c33d4ad2615bb24f3b7.jpg",
+    "views": "1.3K",
+    "location": "Souss-Massa, Morocco"
+  },
+  {
+    "title": "Merzouga Desert",
+    "image": "https://i.pinimg.com/564x/4c/cf/95/4ccf95fc61b82cd91c093bb736f8c4a9.jpg",
+    "views": "1.3K",
+    "location": "Draa-Tafilalet, Morocco"
+  },
+  {
+    "title": "Ahansal Cirque",
+    "image": "https://i.pinimg.com/564x/01/ec/6b/01ec6b3d6c4e3773623a4eaf951c438e.jpg",
+    "views": "1.3K",
+    "location": "Drâa-Tafilalet, Morocco"
+  },
+  {
+    "title": "Agadir Beach",
+    "image": "https://i.pinimg.com/564x/22/52/4c/22524ce25ae06139b8baf3bd9b761c5f.jpg",
+    "views": "1.3K",
+    "location": "Souss-Massa, Morocco"
+  },
+  {
+    "title": "Atlas Mountains",
+    "image": "https://i.pinimg.com/564x/cd/35/f3/cd35f3178957160ea401602a5513ed1f.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  },
+  {
+    "title": "Sahara Desert",
+    "image": "https://i.pinimg.com/564x/94/c2/74/94c2746c843628602c37fed233b9a72a.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  },
+  {
+    "title": "Fes",
+    "image": "https://i.pinimg.com/564x/2e/f0/b5/2ef0b5d5909cde08955de2ffbf355577.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  },
+  {
+    "title": "Akshour",
+    "image": "https://i.pinimg.com/564x/72/11/a0/7211a0696d2e6ad954a95cc02c03d89c.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  },
+  {
+    "title": "Rif Mountain",
+    "image": "https://i.pinimg.com/564x/d8/da/92/d8da9286c888b7500ff13c0d0fea3389.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  },
+  {
+    "title": "Asilah",
+    "image": "https://i.pinimg.com/564x/c0/30/f0/c030f0cb0501f2eb4ccd5561ddc5b6f6.jpg",
+    "views": "1.3K",
+    "location": "Morocco"
+  }
 ]

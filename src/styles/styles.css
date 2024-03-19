@@ -109,9 +109,6 @@ img {
 }
 
 /* header */
-header a:hover {
-  opacity: 0.6;
-}
 
 header {
   display: flex;
@@ -131,26 +128,57 @@ header .nav_bar ul {
   display: flex;
   list-style-type: none;
 }
-
-header .nav_bar li:nth-child(2) {
-  margin-left: 1em;
-}
-
-header .nav_bar a {
-  font-weight: 700;
-  font-size: 0.6em;
-  padding: 4px;
-}
-
-header .nav_bar li:nth-child(1) a {
-  color: var(--main-color);
-}
-
-header .nav_bar li:nth-child(2) a {
-  color: var(--white-color);
+header button {
+  height: fit-content;
+  line-height: 0;
   background-color: var(--main-color);
-  padding: 8px 24px;
-  border-radius: 12px;
+  border: none;
+  border-radius: 5px;
+}
+header button svg {
+  width: 50px;
+  height: 50px;
+}
+header .nav_bar {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  right: -100%;
+  top: 0;
+  z-index: 10000;
+  background-color: var(--main-color);
+  transition: all 1000ms linear;
+}
+header .open_nav {
+  right: 0;
+}
+header .nav_bar ul{
+  display: block;
+  padding: 2em;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+header .nav_bar ul li {
+  margin: 10px 0;
+  padding: 0;
+}
+header .nav_bar ul li a {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header .nav_bar button {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 2em;
+  color: white;
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+header .nav_bar ul li a:hover {
+  border-bottom: 1px solid white;
 }
 
 /* section One */
@@ -721,6 +749,7 @@ footer h1 {
   width: fit-content;
   font-size: 1.5em;
   margin-right: 1em;
+  margin: auto;
 }
 
 footer ul {
@@ -811,9 +840,6 @@ footer span a {
   }
   header .nav_bar a {
     font-size: 1em;
-  }
-  header .nav_bar li:nth-child(2) a {
-    padding: 8px 35px;
   }
   .main_section_1 .presentation h1 {
     font-size: 1.5em;
@@ -949,6 +975,9 @@ footer span a {
     top: 0;
     left: 0;
     border-radius: 0 14em 14em 0;
+  }
+  .last_section .privacy_img2 {
+    background-image: url(../components/assets/img-last.jpg);
   }
   .last_section .container {
     position: relative;

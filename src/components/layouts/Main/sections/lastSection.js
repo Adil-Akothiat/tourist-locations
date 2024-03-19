@@ -6,14 +6,18 @@ const LastSection = ()=> {
             <div className='privacy_img'></div>
             <div className='container'>
                 <div className='hidden'>
-                    <h2>We Respect Privacy</h2>
+                    <h2>Benefits</h2>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam your <a href='#/social'>social profile</a>.
+                        - Enhances the tourism experience for visitors by providing easy access to information about local attractions, events, and dining options.
                     </p>
                     <p>
-                    eritatisob caecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga Ipsa <a href='#/help'>help@domain.com</a> eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam.
+                        - Promotes local businesses and tourism initiatives, driving foot traffic and revenue to restaurants, shops, and cultural sites.
+                    </p>
+                    <p>
+                        - Encourages exploration and discovery of the community's unique heritage, culture, and natural beauty.
+                    </p>
+                    <p>
+                        - Fosters community engagement and pride by showcasing the best of what the local area has to offer to residents and visitors alike.
                     </p>
                 </div>
             </div>

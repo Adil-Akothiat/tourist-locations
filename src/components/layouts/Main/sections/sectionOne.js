@@ -10,7 +10,7 @@ const SectionOne = (props)=> {
             <h1 className='bold'>&I live the most beautiful experiences...</h1>
             <h2 className='bold'>For real!</h2>
             <p>
-              There are millions of interesting places around the world, with new few search possibilities. With Around Us, discover more places to visit
+              There are alot of interesting places in Morocco, with new few search possibilities. With THE GUIDE, discover more places to visit
             </p>
           </div>
           <div className='search_bar hidden'>
@@ -25,13 +25,13 @@ const SectionOne = (props)=> {
           <div className='description hidden'>
             <div>
               <div>
-                <h3 className='bold'>Great Wall of China</h3>
-                <p>Historical landmark</p>
+                <h3 className='bold'>Chefchaouen</h3>
+                <p>The blue city</p>
               </div>
               <button><a href='#/country-details'>→</a></button>
             </div>
             <p>          
-              "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient..."
+              "Chaouen is a city in northwest Morocco. It is the chief town of the province of the same name and is noted for its buildings in shades of blue, for which it is nicknamed the Blue City"
             </p>
           </div>
         </section>
