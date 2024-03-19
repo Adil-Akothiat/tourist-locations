@@ -21,7 +21,7 @@ const Header = ()=> {
             <li><a href='#/InteractiveMaps'>Interactive Maps</a></li>
             <li><a href='#/RestaurantGuide'>Restaurant Guide</a></li>
             <li><a href='#/EventsCalendar'>Events Calendar</a></li>
-            <li><a href='#/PersonalizedRecommendations'>ersonalized Recommendations</a></li>
+            <li><a href='#/PersonalizedRecommendations'>Personalized Recommendations</a></li>
             <li><a href='#/Feedbacks'>Feedbacks</a></li>
             <li><a href='#/SocialSharing'>Social Sharing</a></li>
             <li><a href='#/login'>Log in</a></li>
