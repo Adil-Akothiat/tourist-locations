@@ -7,7 +7,7 @@ const SectionOne = (props)=> {
         <section className='container'>
           <div className='presentation hidden'>
             <h1 className='bold'>Discover the most beautiful places</h1>
-            <h1 className='bold'>&I live the most beautiful experiences...</h1>
+            <h1 className='bold'>& live the most beautiful experiences...</h1>
             <h2 className='bold'>For real!</h2>
             <p>
               There are alot of interesting places in Morocco, with new few search possibilities. With THE GUIDE, discover more places to visit
