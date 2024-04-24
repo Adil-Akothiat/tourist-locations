@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 
 
 const ResetCenterView = ({ coordinates })=> {
@@ -15,7 +15,7 @@ const ResetCenterView = ({ coordinates })=> {
                 map.getZoom()
             );
         }
-    }, [coordinates])
+    }, [coordinates, map])
     return null;
 } 
 
@@ -28,7 +28,7 @@ var NOMINAL_BASE_URL = "https://nominatim.openstreetmap.org/search?";
 
 const InteractiveMap = () => {
     const [location, setLocation] = useState(null);
-    const [searchP, setsearchP] = useSearchParams();
+    // const [searchP, setsearchP] = useSearchParams();
     const [coordinates, setCordinates] = useState([35.1700832, -5.2766582971063976]);
     const [zoom, setZoom] = useState(7);
 
@@ -57,14 +57,15 @@ const InteractiveMap = () => {
     }
 
     // check url params
-    useEffect(()=> {
-        // get url params
-        const lc= searchP.get("search");
-        if(lc !== "" && lc) {
-            setLocation(lc);
-            search();
-        }
-    },[])
+    // useEffect(()=> {
+    //     // get url params
+    //     const lc= searchP.get("search");
+    //     if(lc !== "" && lc) {
+    //         setLocation(lc);
+    //         search();
+    //         setsearchP("");
+    //     }
+    // },[])
 
     return (
         <div className="container">
