@@ -5,11 +5,11 @@ import "leaflet/dist/leaflet.css";
 // import { useSearchParams } from "react-router-dom";
 
 
-const ResetCenterView = ({ coordinates })=> {
+const ResetCenterView = ({ coordinates }) => {
     const map = useMap();
 
-    useEffect(()=> {
-        if(coordinates) {
+    useEffect(() => {
+        if (coordinates) {
             map.setView(
                 [coordinates[0], coordinates[1]],
                 map.getZoom()
@@ -17,7 +17,7 @@ const ResetCenterView = ({ coordinates })=> {
         }
     }, [coordinates, map])
     return null;
-} 
+}
 
 const icon = new L.Icon({
     iconUrl: require("./location.png"),
@@ -31,12 +31,13 @@ const InteractiveMap = () => {
     // const [searchP, setsearchP] = useSearchParams();
     const [coordinates, setCordinates] = useState([35.1700832, -5.2766582971063976]);
     const [zoom, setZoom] = useState(7);
+    const [searchList, setSearchList] = useState([]);
 
-    const searchLocation = (e)=> {
+    const searchLocation = (e) => {
         e.preventDefault();
         search();
     }
-    async function search() {
+    async function search(type) {
         const params = {
             q: location,
             format: "json",
@@ -48,11 +49,15 @@ const InteractiveMap = () => {
             method: "GET",
             redirect: "follow"
         }
-        const response = await fetch(NOMINAL_BASE_URL+queryStr, options).then(res=> res.json()).catch(err=> console.log(err.message));
-        if(response.length>0) {
-            const { lat, lon } = response[0]
-            setCordinates([lat, lon]);
-            setZoom(25);
+        const response = await fetch(NOMINAL_BASE_URL + queryStr, options).then(res => res.json()).catch(err => console.log(err.message));
+        if (response.length > 0) {
+            if (type === "array") {
+                setSearchList(response.map(l => { return { name: l.display_name, lat: l.lat, lon: l.lon } }));
+            } else {
+                const { lat, lon } = response[0]
+                setCordinates([lat, lon]);
+                setZoom(25);
+            }
         }
     }
 
@@ -71,16 +76,36 @@ const InteractiveMap = () => {
         <div className="container">
             <div className="map-search">
                 <form onSubmit={searchLocation}>
-                    <input type="search" name="search_location" id="search-lc" placeholder="Trouvez votre Medina..." onChange={({target})=> setLocation(target.value)}/>
+                    <input type="search" name="search_location" id="search-lc" placeholder="Trouvez votre Medina préféré..." onChange={({ target }) => {
+                        setLocation(target.value);
+
+                        search("array");
+                    }} />
                     <button type="submit">Chercher</button>
                 </form>
+                {
+                    searchList.length > 0 ? (
+                        <div className="search-list">
+                            <ul>
+                                {
+                                    searchList.map((li, i) => <li onClick={() => {
+                                        setCordinates([li.lat, li.lon]);
+                                        setZoom(100);
+                                        setSearchList([])
+
+                                    }} key={"key" + i}>{li.name}</li>)
+                                }
+                            </ul>
+                        </div>
+                    ) : null
+                }
             </div>
             <MapContainer center={[51.505, -0.09]} zoom={zoom} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://api.maptiler.com/maps/jp-mierune-streets/256/{z}/{x}/{y}.png?key=1RrHIz6kPYhJrchtGQVV"
+                    url="https://api.maptiler.com/maps/cadastre-satellite/256/{z}/{x}/{y}.png?key=1RrHIz6kPYhJrchtGQVV"
                 />
-                <Marker 
+                <Marker
                     position={coordinates}
                     icon={icon}
                 >
@@ -88,7 +113,7 @@ const InteractiveMap = () => {
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
                 </Marker>
-                <ResetCenterView coordinates={coordinates}/>
+                <ResetCenterView coordinates={coordinates} />
             </MapContainer>
         </div>
     );
