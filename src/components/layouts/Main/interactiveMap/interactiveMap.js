@@ -103,7 +103,7 @@ const InteractiveMap = () => {
             <MapContainer center={[51.505, -0.09]} zoom={zoom} scrollWheelZoom={false}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://api.maptiler.com/maps/cadastre-satellite/256/{z}/{x}/{y}.png?key=1RrHIz6kPYhJrchtGQVV"
+                    url="https://api.maptiler.com/maps/jp-mierune-streets/{z}/{x}/{y}.png?key=1RrHIz6kPYhJrchtGQVV"
                 />
                 <Marker
                     position={coordinates}
