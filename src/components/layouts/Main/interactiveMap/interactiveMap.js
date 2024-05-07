@@ -30,7 +30,7 @@ const InteractiveMap = () => {
     const [location, setLocation] = useState(null);
     // const [searchP, setsearchP] = useSearchParams();
     const [coordinates, setCordinates] = useState([35.1700832, -5.2766582971063976]);
-    const [zoom, setZoom] = useState(7);
+    const [zoom, setZoom] = useState(15);
     const [searchList, setSearchList] = useState([]);
 
     const searchLocation = (e) => {
